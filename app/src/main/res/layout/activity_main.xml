@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/calculator_text"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:textDirection="ltr"
+            android:textSize="90dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/calculator_text">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/rounded_corner"
+            android:text="C"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            app:backgroundTint="#6E6E6E" />
+
+        <Button
+            android:id="@+id/change"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_corner"
+            android:text="+/-"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            app:backgroundTint="#6E6E6E" />
+
+        <Button
+            android:id="@+id/percent1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_corner"
+            android:text="%"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            app:backgroundTint="#6E6E6E" />
+
+        <Button
+            android:id="@+id/division"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_corner"
+            android:text="/"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            app:backgroundTint="#FFC107" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/line1">
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/rounded_corner"
+            android:text="7"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            app:backgroundTint="#FD989898" />
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_corner"
+            android:text="8"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            app:backgroundTint="#FD989898" />
+
+        <Button
+            android:id="@+id/nine"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_corner"
+            android:text="9"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            app:backgroundTint="#FD989898" />
+
+        <Button
+            android:id="@+id/multiply1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_corner"
+            android:text="*"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            app:backgroundTint="#FFC107" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/line2">
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/rounded_corner"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            app:backgroundTint="#FD989898" />
+
+        <Button
+            android:id="@+id/five"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_corner"
+            android:text="5"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            app:backgroundTint="#FD989898" />
+
+        <Button
+            android:id="@+id/six"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_corner"
+            android:text="6"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            app:backgroundTint="#FD989898" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_corner"
+            android:text="+"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            app:backgroundTint="#FFC107" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/line3">
+
+        <Button
+            android:id="@+id/one"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/rounded_corner"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            app:backgroundTint="#FD989898" />
+
+        <Button
+            android:id="@+id/two"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_corner"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            app:backgroundTint="#FD989898" />
+
+        <Button
+            android:id="@+id/three"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_corner"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            app:backgroundTint="#FD989898" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_corner"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            app:backgroundTint="#FFC107" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/line4">
+
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="190dp"
+            android:layout_height="90dp"
+            android:background="@drawable/rounded_corner"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            app:backgroundTint="#FD989898" />
+
+        <Button
+            android:id="@+id/common"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_corner"
+            android:text=","
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            app:backgroundTint="#FD989898" />
+
+        <Button
+            android:id="@+id/equal"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_corner"
+            android:text="="
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            app:backgroundTint="#FFC107" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
