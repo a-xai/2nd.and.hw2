@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
     private int firstNumber, secondNumber;
     private Button one, two, three, four, five, six, plus, minus, division, multiply, seven, eight, nine, delete, zero,
             equal;
-    private TextView textView;
+    private TextView textView, textView2,textView3;
     private boolean addition, subtraction, multiplication, bdivision;
 
     @Override
@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText("");
             } else {
                 firstNumber = Integer.parseInt(textView.getText().toString());
+                textView2.setText(textView.getText()) ;
                 addition = true;
                 textView.setText(null);
             }
@@ -62,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText("");
             } else {
                 firstNumber = Integer.parseInt(textView.getText().toString());
+                textView2.setText(textView.getText());
+
                 subtraction = true;
                 textView.setText(null);
             }
@@ -71,15 +74,20 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText("");
             } else {
                 firstNumber = Integer.parseInt(textView.getText().toString());
+                textView2.setText(textView.getText());
+
                 multiplication = true;
                 textView.setText(null);
             }
         });
         division.setOnClickListener(v -> {
             if (textView == null) {
+              //  textView2.setText(textView2.getText().toString());
                 textView.setText("");
             } else {
+                textView3.setText("/");
                 firstNumber = Integer.parseInt(textView.getText().toString());
+                textView2.setText(textView.getText());
                 bdivision = true;
                 textView.setText(null);
             }
@@ -87,22 +95,28 @@ public class MainActivity extends AppCompatActivity {
         equal.setOnClickListener(v -> {
             secondNumber = Integer.parseInt(textView.getText().toString());
             if(addition == true){
+                textView2.setText("");
                 textView.setText(firstNumber + secondNumber + "");
                 addition = false;
             }
             if(multiplication == true){
+                textView2.setText("");
                 textView.setText(firstNumber * secondNumber + "");
                 multiplication = false;
             }if(subtraction == true){
+                textView2.setText("");
                 textView.setText(firstNumber - secondNumber + "");
                 subtraction = false;
             }if(bdivision == true){
+                textView3.setText("=");
+                textView2.setText("");
                 textView.setText(firstNumber / secondNumber + "");
                 bdivision = false;
             }
         });
         delete.setOnClickListener(v -> {
             textView.setText("");
+            textView3.setText("");
         });
 
     }
@@ -125,6 +139,8 @@ public class MainActivity extends AppCompatActivity {
         delete = findViewById(R.id.delete);
         equal = findViewById(R.id.equal);
         textView = findViewById(R.id.textView);
+        textView2 = findViewById(R.id.textView2);
+        textView3 = findViewById(R.id.text3);
     }
 
 }
