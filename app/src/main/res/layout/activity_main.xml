@@ -81,7 +81,7 @@
             android:background="@drawable/rounded_corner"
             android:text="+/-"
             android:textColor="@color/black"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:backgroundTint="#6E6E6E" />
 
         <Button
@@ -92,7 +92,7 @@
             android:background="@drawable/rounded_corner"
             android:text="%"
             android:textColor="@color/black"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:backgroundTint="#6E6E6E" />
 
         <Button
@@ -103,7 +103,7 @@
             android:background="@drawable/rounded_corner"
             android:text="/"
             android:textColor="@color/black"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:backgroundTint="#FFC107" />
     </LinearLayout>
 
@@ -136,7 +136,7 @@
             android:background="@drawable/rounded_corner"
             android:text="8"
             android:textColor="@color/black"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:backgroundTint="#FD989898" />
 
         <Button
@@ -147,7 +147,7 @@
             android:background="@drawable/rounded_corner"
             android:text="9"
             android:textColor="@color/black"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:backgroundTint="#FD989898" />
 
         <Button
@@ -158,7 +158,7 @@
             android:background="@drawable/rounded_corner"
             android:text="*"
             android:textColor="@color/black"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:backgroundTint="#FFC107" />
     </LinearLayout>
 
@@ -192,7 +192,7 @@
             android:background="@drawable/rounded_corner"
             android:text="5"
             android:textColor="@color/black"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:backgroundTint="#FD989898" />
 
         <Button
@@ -203,7 +203,7 @@
             android:background="@drawable/rounded_corner"
             android:text="6"
             android:textColor="@color/black"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:backgroundTint="#FD989898" />
 
         <Button
@@ -214,7 +214,7 @@
             android:background="@drawable/rounded_corner"
             android:text="+"
             android:textColor="@color/black"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:backgroundTint="#FFC107" />
     </LinearLayout>
 
@@ -247,7 +247,7 @@
             android:background="@drawable/rounded_corner"
             android:text="2"
             android:textColor="@color/black"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:backgroundTint="#FD989898" />
 
         <Button
@@ -258,7 +258,7 @@
             android:background="@drawable/rounded_corner"
             android:text="3"
             android:textColor="@color/black"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:backgroundTint="#FD989898" />
 
         <Button
@@ -269,7 +269,7 @@
             android:background="@drawable/rounded_corner"
             android:text="-"
             android:textColor="@color/black"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:backgroundTint="#FFC107" />
     </LinearLayout>
 
@@ -291,7 +291,7 @@
             android:background="@drawable/rounded_corner"
             android:text="0"
             android:textColor="@color/black"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:backgroundTint="#FD989898" />
 
         <Button
@@ -302,7 +302,7 @@
             android:background="@drawable/rounded_corner"
             android:text=","
             android:textColor="@color/black"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:backgroundTint="#FD989898" />
 
         <Button
@@ -313,7 +313,7 @@
             android:background="@drawable/rounded_corner"
             android:text="="
             android:textColor="@color/black"
-            android:textSize="35dp"
+            android:textSize="35sp"
             app:backgroundTint="#FFC107" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

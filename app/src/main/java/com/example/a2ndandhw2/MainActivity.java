@@ -7,9 +7,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private int firstNumber, secondNumber;
+    private double firstNumber, secondNumber;
     private Button one, two, three, four, five, six, plus, minus, division, multiply, seven, eight, nine, delete, zero,
-            equal;
+            equal,common;
     private TextView textView, textView2,textView3;
     private boolean addition, subtraction, multiplication, bdivision;
 
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             if (textView == null) {
                 textView.setText("");
             } else {
-                firstNumber = Integer.parseInt(textView.getText().toString());
+                firstNumber = Double.parseDouble(textView.getText().toString());
                 textView2.setText(textView.getText()) ;
                 addition = true;
                 textView.setText(null);
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             if (textView == null) {
                 textView.setText("");
             } else {
-                firstNumber = Integer.parseInt(textView.getText().toString());
+                firstNumber = Double.parseDouble(textView.getText().toString());
                 textView2.setText(textView.getText());
 
                 subtraction = true;
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             if (textView == null) {
                 textView.setText("");
             } else {
-                firstNumber = Integer.parseInt(textView.getText().toString());
+                firstNumber = Double.parseDouble(textView.getText().toString());
                 textView2.setText(textView.getText());
 
                 multiplication = true;
@@ -86,14 +86,14 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText("");
             } else {
                 textView3.setText("/");
-                firstNumber = Integer.parseInt(textView.getText().toString());
+                firstNumber = Double.parseDouble(textView.getText().toString());
                 textView2.setText(textView.getText());
                 bdivision = true;
                 textView.setText(null);
             }
         });
         equal.setOnClickListener(v -> {
-            secondNumber = Integer.parseInt(textView.getText().toString());
+            secondNumber = Double.parseDouble(textView.getText().toString());
             if(addition == true){
                 textView2.setText("");
                 textView.setText(firstNumber + secondNumber + "");
@@ -113,6 +113,9 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText(firstNumber / secondNumber + "");
                 bdivision = false;
             }
+        });
+        common.setOnClickListener(v -> {
+            textView.setText(textView.getText() + ".");
         });
         delete.setOnClickListener(v -> {
             textView.setText("");
@@ -138,6 +141,8 @@ public class MainActivity extends AppCompatActivity {
         division = findViewById(R.id.division);
         delete = findViewById(R.id.delete);
         equal = findViewById(R.id.equal);
+        common = findViewById(R.id.common);
+
         textView = findViewById(R.id.textView);
         textView2 = findViewById(R.id.textView2);
         textView3 = findViewById(R.id.text3);
